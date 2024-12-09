@@ -9,4 +9,6 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'candle_business.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'calm_candles.settings')
+
+
