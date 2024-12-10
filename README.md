@@ -132,9 +132,19 @@ The site is structured around an easy-to-use interface. The primary menu include
 Wireframes were created for the following key pages to ensure an intuitive user journey:
 - **Home Page**
 
-![Homepage Wireframe](docs/wireframe/homepage-large-screen.png)
+mobile home page view
 
-![Homepage Wireframe](docs/wireframe/homepage-mobile.png)
+![alt text](<static/images/New Wireframe 1.png>)
+
+Tablet home page view
+
+![alt text](<static/images/calm candles tablet design home page.png>)
+
+Desktop home page view
+
+![alt text](<static/images/calm candles website design home page.png>)
+
+
 
 - **Specialist Search Results**
 
