@@ -134,7 +134,7 @@ Wireframes were created for the following key pages to ensure an intuitive user 
 
 mobile home page view
 
-![alt text](<static/images/New Wireframe 1.png>)
+![alt text](<static/images/calm candles smartphone design home page.png>)
 
 Tablet home page view
 

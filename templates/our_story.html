@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Calm Candles</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'our_story' %}">Our Story</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="our-story">
+            <h1>Our Story</h1>
+            <div class="story-content">
+                <img src="{% static 'images/our_story.jpg' %}" alt="Our Story" class="story-image">
+                <p>
+                    Welcome to Calm Candles! What began as a simple hobby has grown into a passion for creating 
+                    beautifully crafted candles that bring warmth and tranquility to your home.
+                </p>
+                <p>
+                    Our journey started in a small kitchen where we experimented with waxes, fragrances, and wicks to create 
+                    the perfect candle. Over time, our love for creating candles evolved into a mission: to craft high-quality, 
+                    eco-friendly candles that enhance your space and soothe your soul.
+                </p>
+                <p>
+                    At Calm Candles, we believe in sustainability and mindfulness. Each candle is hand-poured with care, 
+                    using natural soy wax and lead-free wicks. We prioritize using recyclable materials and partner with 
+                    suppliers who share our vision for a greener future.
+                </p>
+                <p>
+                    Thank you for being part of our journey. Your support allows us to continue spreading light, warmth, 
+                    and calmness to homes around the world.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calm Candles. All rights reserved.</p>
+    </footer>
+</body>
+</html>

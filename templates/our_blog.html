@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - Calm Candles</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'our_story' %}">Our Story</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'our_blog' %}">Our Blog</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog">
+            <h1>Our Blog</h1>
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <img src="{% static 'images/blog_candle_tips.jpg' %}" alt="Candle Tips" class="blog-image">
+                    <h2>5 Tips for Caring for Your Candles</h2>
+                    <p>Learn how to get the most out of your candles with our simple tips for care and maintenance.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <img src="{% static 'images/blog_seasonal_collection.jpg' %}" alt="Seasonal Collection" class="blog-image">
+                    <h2>Introducing Our Seasonal Collection</h2>
+                    <p>Explore our latest seasonal candle collection, inspired by the scents of the holidays.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <img src="{% static 'images/blog_cozy_spaces.jpg' %}" alt="Cozy Spaces" class="blog-image">
+                    <h2>How to Create a Cozy Space with Candles</h2>
+                    <p>Transform your home into a cozy retreat with the warm glow of our handcrafted candles.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calm Candles. All rights reserved.</p>
+    </footer>
+</body>
+</html>

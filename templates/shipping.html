@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information - Calm Candles</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'our_story' %}">Our Story</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'our_blog' %}">Our Blog</a></li>
+                <li><a href="{% url 'shipping' %}">Shipping</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shipping">
+            <h1>Shipping Information</h1>
+
+            <h2>Shipping Rates</h2>
+            <p>We offer flat-rate shipping of $5 for orders under $50. Orders over $50 qualify for free shipping within the continental US.</p>
+
+            <h2>Delivery Times</h2>
+            <p>Our candles are handcrafted and made to order. Please allow 3-5 business days for processing before your order ships. Estimated delivery times are as follows:</p>
+            <ul>
+                <li><strong>Standard Shipping:</strong> 5-7 business days</li>
+                <li><strong>Express Shipping:</strong> 2-3 business days</li>
+            </ul>
+
+            <h2>International Shipping</h2>
+            <p>We currently ship to select countries outside the US. Shipping rates and delivery times vary based on location. Additional customs fees may apply.</p>
+
+            <h2>Order Tracking</h2>
+            <p>Once your order ships, you’ll receive a confirmation email with tracking information. You can use this to track your order's progress.</p>
+
+            <h2>Returns and Exchanges</h2>
+            <p>If you are not satisfied with your purchase, you may return or exchange your items within 30 days of receipt. Products must be unused and in their original packaging. Please contact us for assistance.</p>
+
+            <h2>Need Help?</h2>
+            <p>If you have any questions about your order or our shipping policies, please contact us at <a href="mailto:support@calmcandles.com">support@calmcandles.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calm Candles. All rights reserved.</p>
+    </footer>
+</body>
+</html>
