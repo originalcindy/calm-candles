@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'candle_business.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'calm-candles.settings')
 
 application = get_wsgi_application()

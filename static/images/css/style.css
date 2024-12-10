@@ -2,7 +2,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('static/images/css/');
+    background-image: url('/static/images/calmcandlesbackground.jpg'); /* Corrected for Django static files */
+
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;

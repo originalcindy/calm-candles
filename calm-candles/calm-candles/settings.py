@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calm_candles',  
+    'calm-candles',  
 ]
 
 MIDDLEWARE = [
@@ -53,9 +53,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'calm_candles.urls'
+ROOT_URLCONF = 'calm-candles.urls'
 
 
 TEMPLATES = [
@@ -74,9 +75,7 @@ TEMPLATES = [
     },
 ]
 
-]
-
-WSGI_APPLICATION = 'calm_candles.wsgi.application'
+WSGI_APPLICATION = 'calm-candles.wsgi.application'
 
 
 # Database
