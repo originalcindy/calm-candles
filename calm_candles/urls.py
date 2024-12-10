@@ -1,5 +1,5 @@
 """
-URL configuration for candle_business project.
+URL configuration for calm_candles project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -14,16 +14,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+from django.contrib import admin
 from django.urls import path
-from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('our-story/', views.our_story, name='our_story'),
-    path('our-blog/', views.our_blog, name='our_blog'),
-    path('shop/', views.shop, name='shop'),
-    path('shipping-information/', views.shipping, name='shipping'),
-    path('contact-us/', views.contact_us, name='contact_us'),
 ]

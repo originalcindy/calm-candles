@@ -1,5 +1,5 @@
 """
-ASGI config for candle_business project.
+ASGI config for calm_candles project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'calm-candles.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'calm_candles.settings')
 
 application = get_asgi_application()
