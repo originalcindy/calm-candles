@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&6@(=6788!8=9rzb0+=l4z1s@*nexn%jttrm6e2=ze4o^tmnww
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["8000-originalcin-calmcandles-r2dytx647ql.ws.codeinstitute-ide.net"]
 
 
 # Application definition
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'calm_candles.urls'

@@ -1,69 +1,182 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Lora:wght@400;700&display=swap");
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/calmcandlesbackground.jpg');
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+/* Header Styles */
+.header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
+.header h1 {
+    font-size: 2em;
     margin: 0;
 }
 
-nav {
-    background-color: #444;
-    text-align: center;
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
 }
 
-nav a {
+.navbar a {
     color: white;
-    padding: 15px 20px;
     text-decoration: none;
-    display: inline-block;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #666;
+.navbar a:hover {
+    background-color: #777;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+/* Main Content Styles */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
-.product {
-    border: 1px solid #ccc;
+.section {
+    margin-bottom: 20px;
+}
+
+/* Home Section */
+.home-section {
+    background: url('path-to-your-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-section h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Our Story Section */
+.our-story {
+    background-color: #f9f9f9;
     padding: 20px;
-    margin: 10px;
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.our-story p {
+    font-size: 1.2em;
+}
+
+/* Blog, Shop, Shipping Information, Contact Us Section */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.2em;
+}
+
+/* Shop Section (adjust as needed) */
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.shop .product {
     background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
 }
 
-.product img {
-    width: 100%;
+.shop .product img {
+    max-width: 100%;
     height: auto;
 }
 
-.product h3 {
+.shop .product h3 {
     font-size: 1.5em;
-    color: #333;
+    margin: 10px 0;
+}
+
+.shop .product p {
+    font-size: 1.2em;
+}
+
+/* Contact Us Form */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .home-section {
+        height: 200px;
+    }
+
+    .shop {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
 }
