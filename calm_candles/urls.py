@@ -14,9 +14,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns: path('blog/', include('blog.urls'))
 """
-
+from django.conf.urls.static import static
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import path, include
 from django.urls import path
-from . import views
+from . import views  # Correctly importing views from the current app
 from django.contrib import admin
 
 urlpatterns = [
@@ -27,12 +30,9 @@ urlpatterns = [
     path('shop/', views.shop, name='shop'),
     path('shipping-information/', views.shipping, name='shipping'),
     path('contact-us/', views.contact_us, name='contact_us'),
-]
+    path('search/', views.search, name='search'),  # Ensure your search URL pattern is correctly added here  
+]  + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
 
-from django.urls import path
-from . import views
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-urlpatterns = [
-    # Other URLs
-    path('search/', views.search, name='search'),
-]

@@ -1,21 +1,22 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 def home(request):
     return render(request, 'home.html')
 
-def about(request):
+def our_story(request):
     return render(request, 'our_story.html')
 
-def about(request):
+def our_blog(request):
     return render(request, 'our_blog.html')
 
-def about(request):
+def shop(request):
     return render(request, 'shop.html')
 
-def about(request):
+def contact_us(request):
     return render(request, 'contact_us.html')
 
-def about(request):
+def shipping(request):
     return render(request, 'shipping.html')
 
 def contact(request):
@@ -26,3 +27,13 @@ def contact(request):
         message = request.POST.get('message')
         print(f"Message from {name} ({email}): {message}")
     return render(request, 'contact.html')
+
+from django.http import HttpResponse
+
+def search(request):
+    query = request.GET.get("q", "")
+    return HttpResponse(f"Search results for: {query}")
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the homepage!")
