@@ -36,4 +36,4 @@ def search(request):
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Welcome to the homepage!")
+    return HttpResponse("Welcome to Calm Candles!")
